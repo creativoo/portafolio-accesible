@@ -22,7 +22,10 @@ ol,
 ul {
   margin: 0;
   padding: 0;
-  font-weight:normal;
+}
+
+p {
+  font-weight:200;
 }
 
 ol,
@@ -54,6 +57,22 @@ body, header, section {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.skip-link {
+  height: 0;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  background: var(--azul);
+  color: var(--blanco);
+  border-radius: 5px;
+  font-family: var(--secondary-font);
+  height: auto;
+  margin: 16px 0 8px;
+  padding: 8px;
+  text-decoration: none;
 }
 
 .header{
@@ -104,10 +123,12 @@ nav {
   width: 33%;
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.nav-item:hover a {
   color: var(--blanco);
   text-decoration: none;
   background-color: var(--azul);
+  cursor: pointer;
 }
 
 .nav-item a {
@@ -115,13 +136,11 @@ nav {
   color: var(--azul);
 }
 
-.nav-item a:hover {
-  color: var(--blanco);
-}
 
 .intro {
   margin: 24px 196px 0;
   font-family: var(--secondary-font);
+  color: #464646;
 }
 
 .social-media {
@@ -130,6 +149,27 @@ nav {
   justify-content: space-around;
   margin: 32px auto 0;
   width: 20%;
+}
+
+.social-media img {
+  margin-left: 22px;
+  
+}
+
+.social-media li a {
+  align-items: center;
+  display: flex;
+  color: var(--azul);
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  padding-right: 60px;
+  padding-bottom: 40px;
+}
+
+.social-link-text {
+  padding-right: 10px;
+  padding-left: 8px;
+  font-weight: 600;
 }
 
 .carousel {

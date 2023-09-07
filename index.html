@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    <a href="#main" class="skip-link">Saltar al contenido</a>
     <header>
       <img src="images/diego.jpg" alt="Diego Iberri" class="header-img"/>
       <h1 class="header">Diego Iberri</h1>
@@ -25,7 +26,7 @@
     </nav>
     </header>
 
-    <main>
+    <main id="main">
       <section>
         <h2 class="header"> Acerca de</h2>
         <p class="intro">
@@ -37,20 +38,26 @@
         quieres hablar conmigo de tecnología, accesibilidad o diseño!
         </p>
         <ul class="social-media">
+          <li>
+          <a href="https://www.instagram.com/diegooiberri" target="_blank"
+            ><img src="images/instagram.png" alt="Instagram"
+          /><p class="social-link-text">Instagram</p></a>
+        </li>
         <li>
           <a href="https://twitter.com/diegooiberri" target="_blank"
-            ><img src="images/twitter.png" alt="twitter"
-          /></a>
+            ><img src="images/twitter.png" alt="Twitter"
+          />
+        <p class="social-link-text">Twitter</p></a>
         </li>
         <li>
           <a href="https://github.com/creativoo" target="_blank"
-            ><img src="images/github.png" alt="github"
-          /></a>
+            ><img src="images/github.png" alt="GitHub"
+          /><p class="social-link-text">GitHub</p></a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/creativoo/" target="_blank"
-            ><img src="images/linkedin.png" alt="linkedin"
-          /></a>
+            ><img src="images/linkedin.png" alt="LinkedIn"
+          /><p class="social-link-text">LinkedIn</p></a>
         </li>
         </ul>
       </section>
@@ -61,11 +68,11 @@
         <div class="arrow arrow-left" aria-label="backward button"></div>
         <div class="window">
           <ul class="project-container">
-            <li><button><img class="project project1" src="images/project1.png" alt="proyecto 1" /></button></li>
-            <li><button><img class="project project2" src="images/project2.png" alt="proyecto 2" /></button></li>
-            <li><button><img class="project project3" src="images/project3.png" alt="proyecto 3" /></button></li>
-            <li><button><img class="project project4" src="images/project4.png" alt="proyecto 4" /></button></li>
-            <li><button><img class="project project5" src="images/project1.png" alt="proyecto 5" /></button></li>
+            <li><button><img class="project project1" src="images/project1.png" alt="Proyecto 1"/></button></li>
+            <li><button><img class="project project2" src="images/project2.png" alt="Proyecto 2"/></button></li>
+            <li><button><img class="project project3" src="images/project3.png" alt="Proyecto 3"/></button></li>
+            <li  aria-hidden="true"><button><img class="project project4" src="images/project4.png" alt="Proyecto 4"/></button></li>
+            <li  aria-hidden="true"><button><img class="project project5" src="images/project5.png" alt="Proyecto 5"/></button></li>
           </ul>
       </div>
       <div class="arrow arrow-right" aria-label="forward button"></div>
