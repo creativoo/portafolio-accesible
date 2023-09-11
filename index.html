@@ -17,11 +17,11 @@
       <img src="images/diego.jpg" alt="Diego Iberri" class="header-img"/>
       <h1 class="header">Diego Iberri</h1>
       <h2 class="subtitle">Front End Developer</h2>
-      <nav>
-        <ul class="navigation">
-          <li class="nav-item"><a href="">Acerca de</a></li>
-          <li class="nav-item"><a href="">Proyectos</a></li>
-          <li class="nav-item"><a href="">Contacto</a></li>
+    <nav>
+      <ul class="navigation">
+        <li class="nav-item"><a href="#acerca-de">Acerca de</a></li>
+        <li class="nav-item"><a href="#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
     </header>
@@ -45,7 +45,7 @@
         </li>
         <li>
           <a href="https://twitter.com/diegooiberri" target="_blank"
-            ><img src="images/twitter.png" alt="Twitter"
+            ><img src="images/twitter.png"  alt="Twitter"
           />
         <p class="social-link-text">Twitter</p></a>
         </li>
@@ -65,17 +65,17 @@
       <section>
         <h2 class="header"> Proyectos</h2>
         <div class="carousel">
-        <button class="arrow arrow-left" aria-label="backward button"></button>
+        <button class="arrow arrow-left" aria-label="boton atrás"></button>
         <div class="window">
           <ul class="project-container">
-            <li><button class="project1"><img class="project" src="images/project1.png" alt="Proyecto 1"/></button></li>
-            <li><button class="project2"><img class="project" src="images/project2.png" alt="Proyecto 2"/></button></li>
-            <li><button class="project3"><img class="project" src="images/project3.png" alt="Proyecto 3"/></button></li>
-            <li  aria-hidden="true"><button class="project4" tabindex="-1"><img class="project" src="images/project4.png" alt="Proyecto 4"/></button></li>
-            <li  aria-hidden="true"><button class="project5"tabindex="-1"><img class="project" src="images/project5.png" alt="Proyecto 5"/></button></li>
+            <li class="project1-container"><button class="project project1"><img class="project-img" src="images/project1.png" alt="Proyecto 1"/></button></li>
+            <li class="project2-container"><button class="project project2"><img class="project-img" src="images/project2.png" alt="Proyecto 2"/></button></li>
+            <li class="project3-container"><button class="project project3"><img class="project-img" src="images/project3.png" alt="Proyecto 3"/></button></li>
+            <li class="project4-container" aria-hidden="true"><button class="project project4" tabindex="-1"><img class="project-img" src="images/project4.png" alt="Proyecto 4"/></button></li>
+            <li class="project5-container" aria-hidden="true"><button class="project project5"tabindex="-1"><img class="project-img" src="images/project5.png" alt="Proyecto 5"/></button></li>
           </ul>
       </div>
-      <button class="arrow arrow-right" aria-label="forward button"></button>
+      <button class="arrow arrow-right" aria-label="boton siguiente"></button>
       </div>
       </section>
     </main>
@@ -83,20 +83,23 @@
 
     <footer class="contact-section">
       <h2 class="contact">Contacto</h2>
-      <form class="form-container">
-        Nombre<input type="text" aria-label="nombre" /> <br />
+      <p class="form-container">Puedes mandarme un mensaje rellenando el formulario siguiente </p><br>
+      <label class="form-container">
+        Nombre<input type="text" aria-label="nombre" id="name" /> <br />
+        <span id="name-error"></span>
         Correo<input type="text" aria-label="correo"/> <br />
         <div class="message-input">Mensaje<input type="text" aria-label="mensaje" /> <br /></div>
         <button class="send-button">Enviar</button>
-      </form>
+      </label>
     </footer>
 
 
-    <div class="notification">El formulario fue enviado exitosamente</div>
+    <div class="notification" aria-live="assertive">El formulario fue enviado exitosamente</div>
     <div class="modal-container">
       <div class="modal">
-        Proyecto realizado por un servidor
-        <div class="modal-project-image"></div>
+        <h2 class="modal-text" id="modal-header" tabindex="0">Proyecto: MOVIEFLOW</h2>
+        <img src="images/project1.png"class="modal-project-image" alt="un screenshot del proyecto"></img>
+        <button class="modal-button">Cerrar</button>
       </div>
     </div>
 
